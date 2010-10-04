@@ -1,0 +1,6 @@
+#!/bin/sh
+DATE=`date "+%Y-%m-%dT%H-%M-%S"`
+#DATEDPHOTO=$HOME/Pictures/Watcher/$DATE.jpeg
+DATEDPHOTO=/Users/josephholsten/Pictures/Watcher/$DATE.jpeg
+ISIGHTCAPTURE=/Users/josephholsten/.bin/isightcapture
+$ISIGHTCAPTURE $DATEDPHOTO
