@@ -5,18 +5,18 @@
 	<key>KeepAlive</key>
 	<false/>
 	<key>Label</key>
-	<string>local.Watcher</string>
+	<string>com.josephholsten.Watcher</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/Users/josephholsten/.bin/Watcher</string>
+		<string>/usr/local/bin/Watcher</string>
 	</array>
 	<key>StartInterval</key>
 	<integer>1</integer>
 	<key>RunAtLoad</key>
 	<true/>
 	<key>StandardErrorPath</key>
-	<string>/dev/null</string>
+		<string>/var/log/Watcher/Watcher.log</string>
 	<key>StandardOutPath</key>
-	<string>/dev/null</string>
+		<string>/var/log/Watcher/Watcher.log</string>
 </dict>
 </plist>

@@ -3,24 +3,35 @@ Watcher
 
 The watcher watches you. It consists of
 
-- isightcapture: put this in your path
-- Watcher: also goes in your path
-- local.Watcher.plist: this goes in ~/Library/LaunchAgents
+- Watcher: executable which runs isightcapture and saves its output
+- com.josephholsten.Watcher.plist: LaunchAgent script to regularly run Watcher
+- install.sh: install script
+- uninstall.sh: uninstall script, deletes captured images as well
+- README: this file
 
-You may need edit things so they have the right file paths. Actually, unless you're me, you may consider everything I describe as a thing you may do as a thing that your life depends upon. Or you may be a punter.
+Requirements
+============
 
-Running
+- [imagesnap](https://github.com/aw/imagesnap): executable which
+  captures an image from your isight camera
+
+Installing
 =======
 
-Once you've got everything set up, you can tell launchd to load the watcher by running
+Just run install.sh from the source directory
 
-  % launchctl load ~/Library/LaunchAgents/local.Watcher.plist
+  % install.sh
 
-Or just restart your machine, log in, and drop your laptop in a bathtub.
-
-You'll start getting a shit ton of boring images in ~/Pictures/Watcher. A script to delete these as fast as they are created is left as an excersise for the reader.
+You'll start getting a shit ton of boring images in
+`/var/lib/Watcher/Pictures`. A script to delete these as fast as they
+are created is left as an exercise for the reader.
 
 Copying
 =======
 
-Everything in this repo is Copyright 2010 Joseph Anthony Pasquale Holsten, unless it's copyright whenever somebody else. You are granted absolutely no license to use this stuff whatsoever, for any purpose, no matter how legally protected, especially as satire. This software will destroy every bit you've ever held dear. If it doesn't, I will sue you. Please have fun and remember to spay and neuter your pets.
+Everything in this repo is Copyright 2010-2012 Joseph Anthony Pasquale
+Holsten, unless it's copyright whenever somebody else. You are granted
+absolutely no license to use this stuff whatsoever, for any purpose, no
+matter how legally protected, especially as satire. This software will
+destroy every bit you've ever held dear. If it doesn't, I will sue you.
+Please have fun and remember to spay and neuter your pets.
